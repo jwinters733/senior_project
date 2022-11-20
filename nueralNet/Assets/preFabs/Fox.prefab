@@ -13,6 +13,8 @@ GameObject:
   - component: {fileID: 3814106632746733645}
   - component: {fileID: 6095293886330182713}
   - component: {fileID: 5826089459899986550}
+  - component: {fileID: 8455485635149358318}
+  - component: {fileID: 7871191972286214056}
   m_Layer: 0
   m_Name: Fox
   m_TagString: Untagged
@@ -155,3 +157,32 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
+--- !u!114 &8455485635149358318
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4130492184433011361}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 80ac560c1b223b34eb084206d44fe4e7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  movementSpeed: 3
+--- !u!114 &7871191972286214056
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4130492184433011361}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 940e8372231afed489bd27caf3591a54, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hunger: 5
+  maxHunger: 10
+  thirst: 5
+  maxThirst: 10
