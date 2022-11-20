@@ -169,8 +169,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 80ac560c1b223b34eb084206d44fe4e7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  movementSpeed: 2
-  maxSpeed: 65
   self: {fileID: 4130492184433011361}
   myFox: {fileID: 7871191972286214056}
 --- !u!114 &7871191972286214056
@@ -189,3 +187,8 @@ MonoBehaviour:
   maxHunger: 500
   thirst: 5
   maxThirst: 10
+  movementSpeed: 0
+  maxSpeed: 0
+  wealth: 0
+  wealthToReproduce: 2
+  myFox: {fileID: 8455485635149358318}

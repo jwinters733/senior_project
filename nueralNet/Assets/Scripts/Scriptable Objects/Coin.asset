@@ -13,4 +13,5 @@ MonoBehaviour:
   m_Name: Coin
   m_EditorClassIdentifier: 
   sprite: {fileID: 3906112111664580409, guid: 15e3a06f0ee27d14b8bb08877fecba7d, type: 3}
+  value: 1
   itemType: 0

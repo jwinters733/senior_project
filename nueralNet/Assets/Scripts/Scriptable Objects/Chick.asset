@@ -13,4 +13,5 @@ MonoBehaviour:
   m_Name: Chick
   m_EditorClassIdentifier: 
   sprite: {fileID: -9022708904772715514, guid: da632abae4c731048b1c64a101b88b23, type: 3}
+  value: 100
   itemType: 1

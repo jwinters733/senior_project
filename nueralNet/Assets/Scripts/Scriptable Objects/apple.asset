@@ -13,4 +13,5 @@ MonoBehaviour:
   m_Name: apple
   m_EditorClassIdentifier: 
   sprite: {fileID: 3983405018662690971, guid: da632abae4c731048b1c64a101b88b23, type: 3}
+  value: 30
   itemType: 1

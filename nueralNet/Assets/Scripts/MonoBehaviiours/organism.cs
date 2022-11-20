@@ -2,6 +2,9 @@ using UnityEngine;
 
 public class organism : Creature
 {
+    public FoxBehavior myFox;
+
+
     void OnTriggerEnter2D(Collider2D collision)
     {
 
@@ -11,11 +14,10 @@ public class organism : Creature
 
             if (hitObject != null)
             {
-                print("hit: " + hitObject.itemType);
-
                 switch (hitObject.itemType)
                 {
                     case Item.ItemType.COIN:
+                        AdjustWealth(1);
                         break;
 
                     case Item.ItemType.FOOD:
@@ -37,5 +39,10 @@ public class organism : Creature
     public void AdjustHunger(int amount)
     {
         hunger = hunger + amount;
+    }
+
+    public void AdjustWealth(int amount)
+    {
+        wealth = wealth + amount;
     }
 }
