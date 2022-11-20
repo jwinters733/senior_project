@@ -1,9 +1,25 @@
 using UnityEngine;
 
-public class NN : MonoBehaviour
+public class foxnet : MonoBehaviour
 {
     public Layer [] layers;
     public int [] networkShape = {2,4,4,2};
+
+    public float movementSpeed = 3.0f;
+    Vector2 movement = new Vector2();
+    Rigidbody2D rb2D;
+
+    public void Awake()
+    {
+        rb2D = GetComponent<Rigidbody2D>();
+
+        layers = new Layer[networkShape.Length - 1];
+        for (int i = 0; i < layers.Length; i++)
+        {
+            layers[i] = new Layer(networkShape[i], networkShape[i + 1]);
+        }
+
+    }
 
     public class Layer
     {
@@ -51,16 +67,6 @@ public class NN : MonoBehaviour
                 }
             }
         }
-    }
-
-    public void Awake()
-    {
-        layers = new Layer[networkShape.Length - 1];
-        for(int i = 0; i < layers.Length; i++)
-        {
-            layers[i] = new Layer(networkShape[i], networkShape[i + 1]);
-        }
-
     }
 
     public float[] Brain(float [] inputs)
