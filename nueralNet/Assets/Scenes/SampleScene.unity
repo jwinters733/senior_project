@@ -89528,9 +89528,9 @@ MonoBehaviour:
   watPrefab: {fileID: 7475384137145410347, guid: 2cf3f9c8a5087f046a191b9c090f6ba1, type: 3}
   chiPrefab: {fileID: 2772091339025601924, guid: 577e05a6b711b264fbf9fba112a50c49, type: 3}
   coinPrefab: {fileID: 4107570117175392694, guid: 97295b11b0e37334fa7da481149fb878, type: 3}
-  initialFood: 30
-  initialCoins: 20
-  foodRespawnDelayS: 1
+  initialFood: 20
+  initialCoins: 10
+  foodRespawnDelayS: 2
   initialCreatures: 5
 --- !u!4 &1878131541
 Transform:
