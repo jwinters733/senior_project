@@ -20,11 +20,10 @@ public class replicate : MonoBehaviour
             for(int i=0; i < (childDNA.Length); i++)
             {
                 childDNA[i] = parentDNA[i];
-                print("Child " + childDNA[i]);
             }
         } else
         {
-            childDNA[0] = Random.Range(1500, 2000);
+            childDNA[0] = Random.Range(1500, 3001);
         }
     }
 }
