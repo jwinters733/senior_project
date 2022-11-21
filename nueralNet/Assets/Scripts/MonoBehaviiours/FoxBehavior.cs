@@ -16,6 +16,8 @@ public class FoxBehavior : MonoBehaviour
     private float movementSpeed;
     private float nextWayPointDistance = 3f;
 
+    Animator animator;
+
     Path path;
     int currentWayPoint = 0;
     bool reachedEndOfPath = false;
@@ -26,6 +28,7 @@ public class FoxBehavior : MonoBehaviour
     private void Awake()
     {
         myFox.setDNA();
+        animator = GetComponent<Animator>();
         seeker = GetComponent<Seeker>();
         rb2D = GetComponent<Rigidbody2D>();
         movementSpeed = myFox.movementSpeed;
@@ -134,6 +137,14 @@ public class FoxBehavior : MonoBehaviour
         Vector2 force = direction * movementSpeed * Time.deltaTime;
 
         rb2D.AddForce(force);
+        if(force.x > 0)
+        {
+            animator.SetInteger("AnimationState", (int) 0);
+        }
+        if (force.x < 0)
+        {
+            animator.SetInteger("AnimationState", (int) 1);
+        }
 
         float distance = Vector2.Distance(rb2D.position, path.vectorPath[currentWayPoint]);
 
