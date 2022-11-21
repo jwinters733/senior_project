@@ -21,7 +21,7 @@ public class organism : Creature
                         break;
 
                     case Item.ItemType.FOOD:
-                        AdjustHunger(hitObject.value);
+                        AdjustHunger(-1 * hitObject.value);
                         break;
                     default:
                         break;
