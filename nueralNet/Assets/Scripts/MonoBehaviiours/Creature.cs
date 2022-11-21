@@ -7,22 +7,25 @@ public abstract class Creature : MonoBehaviour
     public int thirst;
     public int maxThirst;
     public float movementSpeed;
-    public float maxSpeed;
     public int wealth;
     public int wealthToReproduce = 2;
+    public replicate replObj;
 
-    private int[] DNA = new int[1];
+    public int[] DNA = new int[1];
 
     public void setDNA()
     {
-        DNA[0] = Random.Range(1500, 2001);
+        replObj.getParentDNA(DNA);
         maxHunger = DNA[0];
-        maxSpeed = ((1000 - maxHunger) * -1) / 75;
-        movementSpeed = maxSpeed / 2.5f;
-        wealth = 0;
-        print(maxHunger);
+        movementSpeed = ((1000 - maxHunger) * -1);
         print(movementSpeed);
+        wealth = 0;
         hunger = 0;
         wealth = 0;
+    }
+
+    public int[] getDNA()
+    {
+        return DNA;
     }
 }
