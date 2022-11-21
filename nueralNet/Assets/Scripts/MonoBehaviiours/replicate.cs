@@ -23,7 +23,7 @@ public class replicate : MonoBehaviour
             }
         } else
         {
-            childDNA[0] = Random.Range(1500, 3001);
+            childDNA[0] = Random.Range(1500, 2001);
         }
     }
 }

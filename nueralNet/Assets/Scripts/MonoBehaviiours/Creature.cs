@@ -17,7 +17,7 @@ public abstract class Creature : MonoBehaviour
     {
         replObj.getParentDNA(DNA);
 
-        int DNAMutation = Random.Range(-100, 101);
+        int DNAMutation = Random.Range(-50, 51);
         DNA[0] = DNA[0] + DNAMutation;
 
         if (DNA[0] > 3000)
@@ -28,13 +28,13 @@ public abstract class Creature : MonoBehaviour
         {
             DNA[0] = 1500;
         }
+
         print("Child" + DNA[0]);
 
         maxHunger = DNA[0];
-        movementSpeed = ((1000 - maxHunger) * -1);
+        movementSpeed = (3500 - DNA[0]) / 2.5f;
         wealth = 0;
         hunger = 0;
-        wealth = 0;
     }
 
     public int[] getDNA()
