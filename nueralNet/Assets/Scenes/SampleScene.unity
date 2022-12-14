@@ -89528,10 +89528,13 @@ MonoBehaviour:
   watPrefab: {fileID: 7475384137145410347, guid: 2cf3f9c8a5087f046a191b9c090f6ba1, type: 3}
   chiPrefab: {fileID: 2772091339025601924, guid: 577e05a6b711b264fbf9fba112a50c49, type: 3}
   coinPrefab: {fileID: 4107570117175392694, guid: 97295b11b0e37334fa7da481149fb878, type: 3}
+  dinoPrefab: {fileID: 257803379991616660, guid: a0fe2aef65e4b3e4e8338fab49f69952, type: 3}
+  outputOBJ: {fileID: 4130492184433011361, guid: a05e56a1e8492ae4a94b53fbc879f6a7, type: 3}
   initialFood: 20
   initialCoins: 10
-  foodRespawnDelayS: 2
-  initialCreatures: 5
+  foodRespawnDelayS: 1.5
+  coinRespawnDelayS: 0.75
+  initialCreatures: 10
 --- !u!4 &1878131541
 Transform:
   m_ObjectHideFlags: 0
@@ -89545,6 +89548,49 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1913727550
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1913727552}
+  - component: {fileID: 1913727551}
+  m_Layer: 0
+  m_Name: ouput
+  m_TagString: outOBJ
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1913727551
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1913727550}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d44faa16cca615e498a667b941b6dfb9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!4 &1913727552
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1913727550}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &4572240658919610501
 PrefabInstance:

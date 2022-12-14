@@ -8,7 +8,6 @@ public class replicate : MonoBehaviour
 
     public void storeParentDNA(int[] DNAStore)
     {
-        print("Parent " + DNAStore[0]);
         DNAList.Push(DNAStore);
     }
 
@@ -24,6 +23,7 @@ public class replicate : MonoBehaviour
         } else
         {
             childDNA[0] = Random.Range(1500, 2001);
+            childDNA[1] = Random.Range(25, 76);
         }
     }
 }

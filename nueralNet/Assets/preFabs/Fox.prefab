@@ -19,7 +19,7 @@ GameObject:
   - component: {fileID: 210450774415737895}
   m_Layer: 0
   m_Name: Fox
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -176,6 +176,9 @@ MonoBehaviour:
   reprObj: {fileID: 4572240660814675580, guid: 69288a41a3f2bf346a881aaab2fb0588, type: 3}
   closestFood: {fileID: 0}
   closestCoin: {fileID: 0}
+  outputOBJ: {fileID: 3597106298173150543, guid: 98b043fdcbd8409459fc157d7aaf3e73, type: 3}
+  dino: {fileID: 257803379991616660, guid: a0fe2aef65e4b3e4e8338fab49f69952, type: 3}
+  dinoDistance: 0
 --- !u!114 &7871191972286214056
 MonoBehaviour:
   m_ObjectHideFlags: 0
